@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+.container-fluid{
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+.wrapper{
+    background-color:white;
+    padding: 3px;
+    width: 300px;
+}
+.inner-wrapper{
+    display:grid ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 3px;
+    grid-template-areas: 
+        "display display display display"
+        "clear clear divide multiply"
+        "nine eight seven subtract"
+        "four five six add"
+        "one two three equals"
+        "zero zero decimal equals"
+    ;
+    padding: 3px;
+    background-color: black;
+    border-radius: 3px;
+}
+#display{
+    text-align: end;
+    color: white;
+    font-family: digital;
+    grid-area: display;
+    
+}
+.btn{
+    background-color: rgb(119, 90, 224) !important;
+    font-family: Share Tech Mono, monospace;
+    font-size: 20px;
+    border: none !important;
+    color: white;
+    
+    
+}
+#divide, #add, #multiply, #subtract{
+    background-color: rgb(177, 177, 98) !important;
+}
+/*.btn:hover{
+    
+    border: 1px thin rgb(207, 112, 117) !important;
+    
+}*/
+
+#clear{
+    grid-area: clear;
+    background-color: red !important;
+}
+#equals{ 
+    grid-area: equals;
+    background-color: blue !important;   
+}
+#zero{
+    grid-area: zero;
+}
+
+#author{
+    
+    color: #1db832
+}
